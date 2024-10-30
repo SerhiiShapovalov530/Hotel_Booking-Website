@@ -7,6 +7,7 @@ This is a full-stack **Hotel Booking Website** built using **PHP** and **MySQL**
 ## Features
 
 ### User End:
+
 - **Book Hotel Rooms**: Users can browse and book rooms based on availability.
 - **Booking Management**: Users can view, modify, or cancel their bookings.
 - **Login and Registration**: Users can create an account or log in to manage their bookings.
@@ -15,6 +16,7 @@ This is a full-stack **Hotel Booking Website** built using **PHP** and **MySQL**
 - **Online Payments**: Integration with **Paytm** for online payments (or any payment gateway of your choice).
 
 ### Admin End:
+
 - **Room Management**: Admins can add, modify, or delete rooms and their details.
 - **Booking Management**: Admins can manage booking statuses, check-in/check-out, and issue refunds.
 - **User Management**: Admins can view, delete, or ban/unban users.
@@ -32,6 +34,7 @@ This is a full-stack **Hotel Booking Website** built using **PHP** and **MySQL**
 ## Setup and Installation
 
 ### Requirements:
+
 - PHP 7.x or later
 - MySQL Database
 - A web server (Apache, Nginx, etc.)
@@ -40,11 +43,13 @@ This is a full-stack **Hotel Booking Website** built using **PHP** and **MySQL**
 ### Steps to Run:
 
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/yourusername/hotel-booking-website.git
    ```
 
 2. **Database Setup**:
+
    - Create a MySQL database and import the `hotel_booking.sql` file located in the `database/` directory.
    - Update the database configuration in `inc/db_config.php` file with your database credentials:
      ```php
@@ -55,6 +60,7 @@ This is a full-stack **Hotel Booking Website** built using **PHP** and **MySQL**
      ```
 
 3. **Admin Account Setup**:
+
    - Manually insert admin credentials into the `admin_cred` table in the database. Example:
      ```sql
      INSERT INTO admin_cred (admin_name, admin_pass) VALUES ('admin', 'password');
@@ -66,6 +72,7 @@ This is a full-stack **Hotel Booking Website** built using **PHP** and **MySQL**
    - Navigate to `http://localhost/hotel-booking-website/admin/` for the admin panel.
 
 ### Admin Panel Credentials:
+
 - **Username**: `admin`
 - **Password**: `password` (Change this from the database after first login).
 
@@ -102,5 +109,3 @@ Feel free to fork this repository and submit pull requests if you would like to 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
